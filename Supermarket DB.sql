@@ -1,0 +1,16 @@
+#create database supermarket;
+#create table Registers(reg_id int primary key auto_increment,first_name varchar(30) not null,last_name varchar(30) not null,Address varchar(30) not null,Username varchar(30) not null,Password varchar(30) not null);
+#create table meat_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table fruit_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table vegetables_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table canned_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table bakery_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table dairy_section(id int primary key auto_increment, product_name varchar(30) not null, price  double not null);
+#create table shopping_cart(id int primary key auto_increment, product_name varchar(30) not null,quantity int not null ,price double not null ,section varchar(30) not null, total double );
+#insert into canned_section(product_name,price) values('Tuna',25.0),('Beans',15.0),('Red sauce',7.0),('Corn oil',25.0),('Jam',12.0);
+#insert into meat_section(product_name,price) values('GroundBeef',100.0),('Steak',85.0),('Sliced meat',55.0),('Liver',150.0),('Sausage',60.0);
+#insert into bakery_section(product_name,price) values('Doughnut',5.0),('Breadloaf',1.0),('Toast',2.5),('CupCake',5.0),('Cake',45.0);
+#insert into dairy_section(product_name,price) values('Goat milk',35.0),('Cow milk',30.0),('White cheese',15.0),('Feta cheese',10.0),('Cheddar cheese',25.0);
+#insert into fruit_section(product_name,price) values('Apple',15.0),('Banana',12.0),('Kiwi',20.0),('Cherry',35.0),('Watermelon',30.0);
+#insert into vegetables_section (product_name,price) values ('Potato',10.0),('Tomato',8.0),('Carrot',7.0),('Broccoli',15.0),('Onion',7.0);
+select * from shopping_cart  ;
